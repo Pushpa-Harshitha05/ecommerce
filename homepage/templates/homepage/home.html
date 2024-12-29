@@ -1,0 +1,92 @@
+{% extends 'homepage/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'homepage/home.css' %}">
+</head>
+
+<body>
+  <header>
+    <h1><u>GURU MOBILE ACCESSORIES</u> &amp; <u> ELECTRONICS</u></h1>
+  </header>
+  <div class="start">
+    <nav>
+      <a href="#" target="_self">SIGN UP</a>
+      <a href="#" target="_parent"><mark>HOME</mark></a>
+      <a href="#" target="_self">APPLIANCES</a>
+      <a href="#" target="_self">ABOUT</a>
+    </nav>
+  </div>
+  <div class="total">
+    <h2>
+      <p align="center">Welcome to GURU MOBILE ACCESSORIES &amp; ELECTRONICS</p>
+    </h2>
+    <h2>
+      <p align="center"><label for="input"><b>SEARCH FOR ITEMS HERE : </b></label></p>
+    </h2>
+    <img src="{% static 'homepage/images/online_shop.png' %}">
+    <p align="center"><input type="search" id="select" list="items" placeholder="search for products">
+      <datalist id="items">
+        <option>mouse</option>
+        <option>keyboards</option>
+        <option>screencards</option>
+        <option>speakers</option>
+        <option>pendrives</option>
+      </datalist>
+      <input type="button" id="btn" value="search" onclick="search()">
+    </p>
+    <marquee behaviour="alternate" scrollamount="20" onmouseover="this.stop()" onmouseout="this.start()">
+      <div class="row">
+        <img id="pict" src="{% static 'homepage/images/phone_accessories.jpeg' %}">
+      </div>
+      <div class="row">
+        <img id="pict" src="{% static 'homepage/images/accessories1.jpeg' %}">
+      </div>
+      <div class="row">
+        <img id="pict" src="{% static 'homepage/images/accessories2.jpg' %}">
+      </div>
+    </marquee>
+    <div class="column">
+      <img id="pic" src="{% static 'homepage/images/saleimg1.jpg' %}">
+      <p>
+      <h1>LOWEST&nbsp;AND&nbsp;AFFORDABLE&nbsp;PRICES</h1>
+      </p>
+    </div>
+    <div class="column">
+      <img id="pic" src="{% static 'homepage/images/saleimg2.jpg' %}">
+      <p>
+      <h1>BEST&nbsp;OF&nbsp;ELECTRONIC&nbsp;GOODS </h1>
+      </p>
+    </div>
+    <p>
+    <h1><u>ELECTRONIC&nbsp;&nbsp;APPLIANCES&nbsp;&nbsp;FROM&nbsp;&nbsp;VARIOUS&nbsp;&nbsp;BRANDS</u></h1>
+    </p>
+    <div class="second">
+      <img id="pic" src="{% static 'homepage/images/dell.jpeg' %}">
+    </div>
+    <div class="second">
+      <img id="pic" src="{% static 'homepage/images/pen4.jpg' %}">
+    </div>
+    <div class="second">
+      <img id="pic" src="{% static 'homepage/images/key2.png' %}" style=" background-color: white;">
+    </div>
+    <div class="second">
+      <img id="pic" src="{% static 'homepage/images/scr1.jpeg' %}">
+    </div>
+    <div class="column">
+      <img id="pic" src="{% static 'homepage/images/mobile_acc.jpg' %}" style="height:343px">
+    </div>
+    <div class="column">
+      <p style="font-size: 385%; color: black; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        ALL KIND OF MOBILE
+        ACCESSORIES AND ELECTRONIC APPLIANCES AVAILABLE</p>
+    </div>
+    <b>
+      <p align="center" style="font-size: 30px;"><a href="#">SIGN IN</a>for better experience</p>
+    </b>
+  </div>
+  <script src="{% static 'homepage/home_script.js' %}"></script>
+</body>
+
+{% endblock %}
